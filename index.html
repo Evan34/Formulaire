@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main id="main">
+        <h2 id="title">FORMULAIRE D'INSCRIPTION</h2>
+       <div id="content">
+        <p id="description">Veuillez remplir le formulaire ci-après afin de vous inscrire.</p>
+        
+        <form id="survey-form">
+            <!--Nom-->
+            <div class="tab">
+                <div class="label">
+                    <label id="name-label" for="name" >Nom: </label>
+                </div>
+                <div class="input">
+                    <input type="text" name="name" id="name" placeholder="Entrez votre nom" autofocus required>
+                </div>
+            </div>
+            <!--Mail-->
+            <div class="tab">
+                <div class="label">
+                    <label id="email-label" for="mail">Mail: </label>
+                </div>
+                <div class="input">
+                    <input type="email" name="email" id="email" placeholder="Entrez votre e-mail" required>
+                </div>
+             </div>
+             <!--Age-->
+            <div class="tab">
+                <div class="label">
+                    <label id="number-label" for="age">Age: </label>
+                   </div>
+                   <div class="input">
+                       <input type="number" name="age" id="age" placeholder="Entrez votre age" min="1" max="120">
+                   </div>
+             </div>
+             <!--Sexe-->
+             <div class="tab">
+                <div class="label">
+                    <label id="sex-label" for="sex">Sexe: </label>
+                </div>
+                <div class="select">
+                    <select id="dropdown" name="dropdown">
+                        <option value="femme">Femme</option>
+                        <option value="homme">Homme</option>
+                        <option value="other">Autre</option>
+                    </select>
+                </div>
+             </div>
+             <!--Années d'experience-->
+             <div class="tab">
+                <div class="label">
+                    <label id="temp-label" for="temp">Depuis combien de temps faites-vous un potager ?: </label>
+                </div>
+                <div class="temp">                   
+                    <label for="1">Je débute...<input class="choice1" name="radio" value="1" type="radio" checked></label>
+                    <label for="2">Depuis moins de deux ans<input class="choice2" name="radio" value="2" type="radio"></label>
+                    <label for="3">Depuis moins de cinq ans<input class="choice3" name="radio" value="3" type="radio"></label>
+                    <label for="4">Depuis plus de cinq ans<input class="choice4" name="radio" value="4" type="radio"></label>                   
+                </div>
+             </div>
+              <!--A propos de vous-->
+             <div class="tab">
+                <div class="label">
+                    <label id="about-label" for="about">Parlez-nous un peu de votre intérêt pour le jardinage: </label>
+                </div>
+                <div class="about">
+                    <textarea id="comment" name="comment" cols="50" rows="10"></textarea>
+                </div>
+             </div>
+             <button id="submit" type="submit">Envoyer</button>
+        </form>
+       </div>
+    </main>
+    
+</body>
+</html>
